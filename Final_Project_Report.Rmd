@@ -317,7 +317,15 @@ One would assume at least some degree of uncertainty can be attributed to missin
 :::{.fullwidth}
 ## 5.3 Louisville
 
-Similar to Austin, a random forest model (20 layers, 500 trees) using the entire Louisville dataset proved to be the best fit model. Because Louisville's data does not suffer from missing features nor low support for either outcome, it is potentially positioned to predict more accurately than either previous model.
+As with Austin, a random forest model with similar important variables using the entire Louisville dataset proved to be the best fit model.
+:::
+:::{.fullwidth}
+<div align='center'>
+<img display="inline-block" src="graphics/louisville-vi.png" style="max-width:99%">
+</div>
+:::
+:::{.fullwidth}
+Because Louisville's data does not suffer from missing features nor low support for either outcome, it is potentially positioned to predict more accurately than either previous model.
 :::
 :::{.fullwidth}
 <div align='center'>
