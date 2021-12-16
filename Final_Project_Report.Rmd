@@ -168,8 +168,14 @@ Early in the model tuning process, it became a question as to whether the volume
 :::
 :::{.fullwidth}
 ### Permutation Importance Test
-As shown above, variable importance evaluations were conducted using a permutation importance test. This process artificially distorts each column in the dataset interactively to see how much information is lost in the process and indirectly determines how much the results depend on that feature.
-
+As shown below, variable importance evaluations were conducted using a permutation importance test. This process artificially distorts each column in the dataset interactively to see how much information is lost in the process and indirectly determines how much the results depend on that feature.
+:::
+:::{.fullwidth}
+<div align='center'>
+<img display="inline-block" src="graphics/austin-vi.png" style="max-width:99%">
+</div>
+:::
+:::{.fullwidth}
 At the other end of this list, more than 150 variables had no importance. This subset included under-represented breeds, infrequent categorical dummy variables, and the 'misc' breed group. Experiments were run to test the model's effectiveness if these variables were dropped. Theoretically, this specification suggested the model might perform better, since more important variables would construct the underlying decision trees more consistently. The best model provided a slightly higher mean test score, but lowered both precision and recall.
 <br><br>
 :::
@@ -189,8 +195,7 @@ With a final model in mind, it is helpful to consider the model's results in mor
 :::
 :::{.fullwidth}
 <div align='center'>
-<img display="inline-block" src="graphics/austin-training-cfm.png" style="max-width:49%">
-<img display="inline-block" src="graphics/austin-vi.png" style="max-width:49%">
+<img display="inline-block" src="graphics/austin-training-cfm.png" style="max-width:99%">
 </div>
 :::
 
@@ -245,12 +250,19 @@ Thus, Austin's lack of predictive power seems to originate not so much from over
 :::{.fullwidth}
 ## 5.2 Dallas 
 
-With important variables missing, the Dallas model relies more heavily on intake type and condition. As such, it seems the observations overlap more in this dataset than others, making it difficult to parse out meaningful results. At the 0.5 threshold, the model struggles to identify at-risk animals, missing 3/4 of the euthanasia outcomes.
+With important variables missing, the Dallas model relies more heavily on intake type and condition.
 :::
 :::{.fullwidth}
 <div align='center'>
-<img display="inline-block" src="graphics/dallas-training-cfm.png" style="max-width:49%">
-<img display="inline-block" src="graphics/dallas-vi.png" style="max-width:49%">
+<img display="inline-block" src="graphics/dallas-vi.png" style="max-width:99%">
+</div>
+:::
+:::{.fullwidth}
+As such, it seems the observations overlap more in this dataset than others, making it difficult to parse out meaningful results. At the 0.5 threshold, the model struggles to identify at-risk animals, missing 3/4 of the euthanasia outcomes.
+:::
+:::{.fullwidth}
+<div align='center'>
+<img display="inline-block" src="graphics/dallas-training-cfm.png" style="max-width:99%">
 </div>
 :::
 
@@ -277,7 +289,7 @@ As expected, the model does not fare better on unseen data.
 :::
 :::{.fullwidth}
 <div align='center'>
-<img display="inline-block" src="graphics/dallas-test-cfm.png" style="max-width:100%">
+<img display="inline-block" src="graphics/dallas-test-cfm.png" style="max-width:99%">
 </div>
 :::
 
@@ -309,8 +321,7 @@ Similar to Austin, a random forest model (20 layers, 500 trees) using the entire
 :::
 :::{.fullwidth}
 <div align='center'>
-<img display="inline-block" src="graphics/louisville-training-cfm.png" style="max-width:49%">
-<img display="inline-block" src="graphics/louisville-vi.png" style="max-width:49%">
+<img display="inline-block" src="graphics/louisville-training-cfm.png" style="max-width:99%">
 </div>
 :::
 
