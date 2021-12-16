@@ -5,6 +5,7 @@ subtitle: PPOL-564 Fall 2021
 output:
   tufte::tufte_html: default
   html: default 
+  pdf: default
   tufte::tufte_handout: default
 ---
 
@@ -32,7 +33,7 @@ Even so, there is a lack of comprehensive or even cohesive data regarding nation
 
 :::{.fullwidth}
 # 3. Data
-The data used throughout this project comes from shelters in Austin, TX, Dallas, TX, and Louisville, KY via the OpenData.gov platform. Each dataset contains observations of individual animals dating back to 2014. The variables of most interest across these data sets include:
+The data used throughout this project comes from shelters in Austin$^5$, TX, Dallas$^6$, TX, and Louisville$^7$, KY via the OpenData.gov platform. Each dataset contains observations of individual animals dating back to 2014. The variables of most interest across these data sets include:
 
 - The dog's breed(s)
 - The dog's gender and age
@@ -415,6 +416,12 @@ For future iterations, it would be an interesting shift to run a similar model b
 3: Shelter Animals Count. “Dashboards” Shelter Animals Count: The National Database." Accessed December 16, 2021. https://www.shelteranimalscount.org/data-dashboards. 
 
 4: Kaggle. "Austin Animal Center Shelter Intakes and Outcomes." Kaggle. Accessed December 15, 2021. https://www.kaggle.com/aaronschlegel/austin-animal-center-shelter-intakes-and-outcomes
+
+5: Data.AustinTexas.Gov. "Austin Animal Center Outcomes." Open Data. Accessed December 15, 2021. https://data.austintexas.gov/Health-and-Community-Services/Austin-Animal-Center-Outcomes/9t4d-g238
+
+6: Dallas Open Data. "Dallas Animal Shelter Data Fiscal Year 2019 -2020." City of Dallas. Accessed December 15, 2021. https://www.dallasopendata.com/Services/Dallas-Animal-Shelter-Data-Fiscal-Year-2019-2020/7h2m-3um5
+
+7: Data.Louisville.Gov. "Animal Service Intake and Outcome." Open Data. Accessed December 15, 2021. https://data.louisvilleky.gov/dataset/animal-service-intake-and-outcome
 
 
 
